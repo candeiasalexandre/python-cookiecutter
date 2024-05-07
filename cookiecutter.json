@@ -1,0 +1,10 @@
+{
+    "project_name": "Package-Name",
+    "__project_name_snake": "{{cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_')}}",
+    "__project_name_kebab": "{{cookiecutter.__project_name_snake.replace('_', '-')}}",
+    "version": "0.0.1",
+    "owner": "name surname",
+    "email": "name.surname@domain.com",
+    "description": "Project Short Description",
+    "python_version": "3.9"
+}
