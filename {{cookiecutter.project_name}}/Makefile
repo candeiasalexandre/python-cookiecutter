@@ -1,6 +1,6 @@
 .PHONY: clean-env
 clean-env:
-	-rm -rf .venv poetry.lock
+	-rm -rf .venv
 
 
 .PHONY: clean-build
