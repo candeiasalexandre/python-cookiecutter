@@ -14,7 +14,7 @@ clean-build:
 
 
 .PHONY: setup-dev
-setup-dev: clean-env
+setup-dev:
 	poetry config virtualenvs.in-project true 
 	poetry install
 
@@ -41,3 +41,8 @@ check:
 build: clean-build
 	poetry build -f wheel
 	poetry export -f requirements.txt --output dist/requirements.txt --without-hashes
+
+
+.PHONY: build-docker
+build-docker:
+	docker build -t {{cookiecutter.__project_name_kebab}} .
